@@ -50,7 +50,7 @@ f_notify_notification_set_timeout notify_notification_set_timeout = nullptr;
 //f_notify_notification_set_icon_from_pixbuf notify_notification_set_icon_from_pixbuf = nullptr;
 f_notify_notification_set_image_from_pixbuf notify_notification_set_image_from_pixbuf = nullptr;
 //f_notify_notification_set_hint notify_notification_set_hint = nullptr;
-//f_notify_notification_set_hint_int32 notify_notification_set_hint_int32 = nullptr;
+f_notify_notification_set_hint_int32 notify_notification_set_hint_int32 = nullptr;
 //f_notify_notification_set_hint_uint32 notify_notification_set_hint_uint32 = nullptr;
 //f_notify_notification_set_hint_double notify_notification_set_hint_double = nullptr;
 f_notify_notification_set_hint_string notify_notification_set_hint_string = nullptr;
@@ -92,7 +92,7 @@ void startLibNotify() {
 //	load(lib_notify, "notify_notification_set_icon_from_pixbuf", notify_notification_set_icon_from_pixbuf);
 	load(lib_notify, "notify_notification_set_image_from_pixbuf", notify_notification_set_image_from_pixbuf);
 //	load(lib_notify, "notify_notification_set_hint", notify_notification_set_hint);
-//	load(lib_notify, "notify_notification_set_hint_int32", notify_notification_set_hint_int32);
+	load(lib_notify, "notify_notification_set_hint_int32", notify_notification_set_hint_int32);
 //	load(lib_notify, "notify_notification_set_hint_uint32", notify_notification_set_hint_uint32);
 //	load(lib_notify, "notify_notification_set_hint_double", notify_notification_set_hint_double);
 	load(lib_notify, "notify_notification_set_hint_string", notify_notification_set_hint_string);

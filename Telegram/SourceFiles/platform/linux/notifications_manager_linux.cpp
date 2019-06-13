@@ -36,7 +36,7 @@ bool LibNotifyLoaded() {
 //		&& (Libs::notify_notification_set_icon_from_pixbuf != nullptr)
 		&& (Libs::notify_notification_set_image_from_pixbuf != nullptr)
 //		&& (Libs::notify_notification_set_hint != nullptr)
-//		&& (Libs::notify_notification_set_hint_int32 != nullptr)
+		&& (Libs::notify_notification_set_hint_int32 != nullptr)
 //		&& (Libs::notify_notification_set_hint_uint32 != nullptr)
 //		&& (Libs::notify_notification_set_hint_double != nullptr)
 		&& (Libs::notify_notification_set_hint_string != nullptr)
@@ -154,6 +154,7 @@ private:
 		}
 
 		Libs::notify_notification_set_hint_string(_data, "desktop-entry", "telegramdesktop");
+		Libs::notify_notification_set_hint_int32(_data, "urgency", 0);
 
 		auto signalReceiver = Libs::g_object_cast(_data);
 		auto signalHandler = G_CALLBACK(NotificationData::notificationClosed);
