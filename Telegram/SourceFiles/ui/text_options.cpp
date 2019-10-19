@@ -139,6 +139,7 @@ TextParseOptions InstagramDescriptionOptions = {
 bool UseBotTextOptions(
 		not_null<History*> history,
 		not_null<PeerData*> author) {
+	return true;
 	if (const auto user = history->peer->asUser()) {
 		if (user->isBot()) {
 			return true;
